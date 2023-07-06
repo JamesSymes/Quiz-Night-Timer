@@ -1,0 +1,60 @@
+.timer-container {
+  font-size: 6.125vh;
+  padding: 3.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-text, .timer-countdown {
+  margin-bottom: 1.75vh;
+}
+
+.timer-text {
+  margin-right: 1.75vh;
+}
+
+.timer-countdown {
+  width: 6.5625vh;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 40vw;
+  min-width: 200px;
+  max-width: 100%;
+  background-color: rgba(128, 128, 128, 0.5); /* Change grey to 50% transparent */
+  height: 1vh; /* Make bar 50% thinner */
+  border-radius: 50px; /* This line makes the corners rounded */
+}
+
+
+
+
+.progress-bar-inner {
+  height: 100%;
+  width: 0;
+}
+
+.progress-bar-inner.running {
+  animation: progress-bar-fill forwards linear;
+}
+
+@keyframes progress-bar-fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress-bar-fill-reverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

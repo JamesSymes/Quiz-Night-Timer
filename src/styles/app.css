@@ -1,0 +1,90 @@
+/* app.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/quiz-app-background-8855.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.app-content {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+  z-index: 0;
+}
+
+.start-screen, .quiz-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2vh;
+  margin: 0 auto;
+}
+
+.start-screen h2 {
+  font-size: 3vw;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.start-screen button {
+  padding: 1em 2em;
+  margin-top: 1em;
+  font-size: 1.5vw;
+  color: white;
+  background-color: #ff4081;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.start-screen button:hover {
+  background-color: #F80759;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+@media only screen and (min-width: 1200px) {
+  .start-screen h2 {
+    font-size: 1.5em;
+  }
+
+  .start-screen button {
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+
+
+

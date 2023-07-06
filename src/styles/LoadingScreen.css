@@ -1,0 +1,30 @@
+/* LoadingScreen.css */
+.loading-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading-spinner {
+  border: 1.4vh solid #3498db; /* was 0.8vh */
+  border-top: 1.4vh solid #f9f9f9; /* was 0.8vh */
+  border-radius: 50%;
+  width: 13.125vh; /* was 7.5vh */
+  height: 13.125vh; /* was 7.5vh */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
